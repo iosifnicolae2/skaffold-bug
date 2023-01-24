@@ -1,0 +1,13 @@
+apiVersion: skaffold/v3
+kind: Config
+deploy:
+  helm: {}
+manifests:
+  helm:
+    releases:
+      - chartPath: ../../charts/app
+        createNamespace: true
+        name: app2
+        setValueTemplates:
+          image.repository: '{{.IMAGE_REPO}}'
+          image.tag: '{{.IMAGE_TAG}}'

@@ -3,3 +3,6 @@ kind: Config
 requires:
   - path: ./app1/skaffold.yml
   - path: ./app2/skaffold.yml
+  - path: ./app3/skaffold.yml
+  - path: ./app4/skaffold.yml
+  - path: ./app5/skaffold.yml
