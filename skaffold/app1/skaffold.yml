@@ -3,7 +3,7 @@ kind: Config
 build:
   artifacts:
     - context: ../../app1/
-      image: app1
+      image: bringes/app1
   tagPolicy:
     inputDigest: {}
 deploy:
